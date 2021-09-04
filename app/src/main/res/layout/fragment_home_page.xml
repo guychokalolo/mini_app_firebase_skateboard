@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.main.view.HomePage">
+
+    <TextView
+        android:id="@+id/title_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_page_title"
+        android:layout_marginTop="@dimen/dimen70"
+        android:layout_marginLeft="@dimen/dimen20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TitleTextStyle"/>
+
+    <TextView
+        android:id="@+id/title_our"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/our"
+        android:layout_marginTop="@dimen/dimen40"
+        app:layout_constraintBottom_toTopOf="@+id/title_popular"
+        app:layout_constraintStart_toStartOf="@+id/title_popular"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/SubTitleTextStyle"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/popularRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen250"
+        android:layout_marginTop="@dimen/dimen16"
+        android:layout_marginLeft="@dimen/dimen20"
+        app:layout_constraintTop_toBottomOf="@+id/title_popular"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/title_last_skateboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_page_last_skateboard"
+        android:layout_marginTop="@dimen/dimen16"
+        app:layout_constraintStart_toStartOf="@+id/popularRecycler"
+        app:layout_constraintTop_toBottomOf="@+id/popularRecycler"
+        style="@style/DefaultTextStyle"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lastRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen310"
+        android:layout_marginLeft="@dimen/dimen20"
+        android:layout_marginTop="@dimen/dimen16"
+        app:layout_constraintStart_toStartOf="@+id/title_last_skateboard"
+        app:layout_constraintTop_toBottomOf="@+id/title_last_skateboard" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

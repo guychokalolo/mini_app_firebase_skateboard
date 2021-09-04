@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">StreetN skateboard </string>
+
+    <!-- Home page -->
+    <string name="Welcome_to_StreetNT">Welcome</string>
+    <string name="home_page_title">Popular</string>
+    <string name="home_page_last_skateboard">Latest skateboard</string>
+
+    <!-- Favorite Skateboard Page -->
+    <string name="Collection_skateboard">Ma Collection Skateboard</string>
+
+    <!-- Add Skateboard Page-->
+    <string name="add_skateboard_title">Add Skateboard</string>
+
+    <!-- Detail Skateboard Page-->
+    <string name="skateboard_name">@string/item_skateboard_name</string>
+    <string name="skateboard_description">@string/item_skateboard_description</string>
+    <string name="button_add_to_cart_skateboard">Add to Cart</string>
+
+    <!-- Skateboard customize-->
+    <string name="item_skateboard_name">Skateboard name</string>
+    <string name="item_skateboard_description">Skateboard description</string>
+    <string name="our">Our</string>
+
+
+</resources>
